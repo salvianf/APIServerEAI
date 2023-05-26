@@ -4,6 +4,6 @@ from rest_framework import serializers
 
 class JobSerializer(serializers.Serializer):
     type = serializers.CharField()
-    date = serializers.CharField()
+    date = serializers.DateField()
     location = serializers.CharField()
     company = serializers.CharField()
